@@ -259,33 +259,522 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 <!-- Menu Centro -->
-<div id="menu-centro">
-<h3 class="font-headline-md text-headline-md uppercase text-[#F04E23] mb-6 flex items-center gap-2">
-<span class="material-symbols-outlined">local_pizza</span> Sede Yanahuara-Umacollo
-                </h3>
-<div class="flex flex-col gap-6">
-<div class="bg-white p-6 rounded-xl shadow-md flex justify-between items-center hover:shadow-lg transition-shadow border-l-4 border-[#F04E23]">
-<div>
-<h4 class="font-headline-md text-lg text-stone-950 uppercase">Clásica</h4>
-<p class="text-stone-500 font-body-md mt-1">Salsa de tomate especial, mozzarella doble, orégano.</p>
-</div>
-<span class="font-headline-md text-[#F04E23] font-black text-xl">S/ 35</span>
-</div>
-<div class="bg-white p-6 rounded-xl shadow-md flex justify-between items-center hover:shadow-lg transition-shadow border-l-4 border-[#F04E23]">
-<div>
-<h4 class="font-headline-md text-lg text-stone-950 uppercase">Pepperoni</h4>
-<p class="text-stone-500 font-body-md mt-1">Extra pepperoni americano, mozzarella, toque de parmesano.</p>
-</div>
-<span class="font-headline-md text-[#F04E23] font-black text-xl">S/ 42</span>
-</div>
-<div class="bg-white p-6 rounded-xl shadow-md flex justify-between items-center hover:shadow-lg transition-shadow border-l-4 border-[#F04E23]">
-<div>
-<h4 class="font-headline-md text-lg text-stone-950 uppercase">Hawaiana</h4>
-<p class="text-stone-500 font-body-md mt-1">Jamón glaseado, piña asada, mozzarella fundida.</p>
-</div>
-<span class="font-headline-md text-[#F04E23] font-black text-xl">S/ 40</span>
-</div>
-</div>
+<div id="menu-centro" class="flex flex-col gap-4">
+    <h3 class="font-headline-md text-headline-md uppercase text-[#F04E23] mb-2 flex items-center gap-2">
+        <span class="material-symbols-outlined">local_pizza</span> Sede Yanahuara-Umacollo
+    </h3>
+    
+    <details class="group bg-white rounded-xl shadow-sm open:shadow-md transition-all border-l-4 border-[#F04E23]" open>
+        <summary class="flex justify-between items-center font-headline-md text-base sm:text-lg text-stone-950 uppercase p-4 cursor-pointer list-none select-none">
+            <span>Pizzas</span>
+            <span class="transition-transform group-open:rotate-180 material-symbols-outlined">expand_more</span>
+        </summary>
+        <div class="px-4 pb-4 pt-0">
+            
+            <div class="text-[10px] sm:text-xs font-bold text-stone-400 mb-1 flex justify-end gap-1 sm:gap-2 border-b border-stone-100 pb-2">
+                <span class="w-8 sm:w-10 text-center">PEQ.</span>
+                <span class="w-8 sm:w-10 text-center">MED.</span>
+                <span class="w-8 sm:w-10 text-center">FAM.</span>
+            </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">MARENGO</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Tocino, jamón, salame, salchicha</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">ITALIANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Jamón, champiñones</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">HAWAIANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Jamón, piña</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">GIORGIO</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Jamón, cebolla, aceituna</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">ESPAÑOLA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Champiñones, pollo, aceituna</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">CAMPESINA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Tocino, cebolla, aceituna</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">MEDITERRANEA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Pollo, durazno</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">DOMINICANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Pollo, piña</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">NEGRITA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Champiñones, aceituna</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">PORTUGUESA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Salame, piña, champiñones</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">TROPICAL</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Frutas de la estación, leche condensada</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">VEGETARIANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Espinacas, aceitunas, champiñones</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">NAPOLITANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Queso, aceituna</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">AMERICANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Jamón</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">CHACARERA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Salsa Bolognesa</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">MARGARITA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Tomate y albahaca</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">30.00</span>
+                <span class="w-8 sm:w-10 text-center">40.00</span>
+                <span class="w-8 sm:w-10 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">4 ESTACIONES</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Vegetariana, tropical, napolitana, marengo</p>
+            </div>
+            <div class="flex gap-1 sm:gap-2 font-bold text-[#F04E23] text-[13px] sm:text-sm">
+                <span class="w-8 sm:w-10 text-center">-</span>
+                <span class="w-8 sm:w-10 text-center">-</span>
+                <span class="w-8 sm:w-10 text-center">60.00</span>
+            </div>
+        </div>
+        </div>
+    </details>
+    
+    <details class="group bg-white rounded-xl shadow-sm open:shadow-md transition-all border-l-4 border-[#F04E23]" >
+        <summary class="flex justify-between items-center font-headline-md text-base sm:text-lg text-stone-950 uppercase p-4 cursor-pointer list-none select-none">
+            <span>Pastas & Extras</span>
+            <span class="transition-transform group-open:rotate-180 material-symbols-outlined">expand_more</span>
+        </summary>
+        <div class="px-4 pb-4 pt-0">
+            
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">CALZONE MARENGO</h4>
+                
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 30.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">PAN AL AJO</h4>
+                
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 12.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">LASAGÑA BOLOGNESA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">(Salsa bolognesa)</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 30.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">ENSALADA MARENGO</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">(Queso, albahaca, tomate, aceitunas)</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 15.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">INGREDIENTES ADICIONALES</h4>
+                
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 6.00
+            </div>
+        </div>
+        </div>
+    </details>
+    
+    <details class="group bg-white rounded-xl shadow-sm open:shadow-md transition-all border-l-4 border-[#F04E23]" >
+        <summary class="flex justify-between items-center font-headline-md text-base sm:text-lg text-stone-950 uppercase p-4 cursor-pointer list-none select-none">
+            <span>Cocktails & Mocktails</span>
+            <span class="transition-transform group-open:rotate-180 material-symbols-outlined">expand_more</span>
+        </summary>
+        <div class="px-4 pb-4 pt-0">
+            
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">ALGARROBINA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Algarrobina, leche, pisco y huevo</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 25.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">PIÑA COLADA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Ron, crema de coco, jugo de piña</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 25.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">MARGARITAS</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Red, Blue, Yellow (Tequila base)</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 30.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">MOJITOS</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Clásico, Maracuyá, Frutos Rojos</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 25.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">CHILCANOS</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Clásico, Maracuyá, Frutos Rojos</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 25.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">LONG ISLAND ICE TEA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Tequila, Vodka, Ron, Gin, Triple sec</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 30.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">NEGRONI</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Gin, Campari, Vermouth rojo</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 30.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">SOURS & LIBRES</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Pisco Sour, Whisky Sour, Cuba Libre...</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 25.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">SUNRISES</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Pisco, Tequila, Barbados, Ron</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 25.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">OTROS CLÁSICOS</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Aperol Spritz, Machu Picchu, Laguna Azul...</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 25.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">MOCKTAILS</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Virgen Colada, Virgen Rosa, Shirley Temple</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 15.00
+            </div>
+        </div>
+        </div>
+    </details>
+    
+    <details class="group bg-white rounded-xl shadow-sm open:shadow-md transition-all border-l-4 border-[#F04E23]" >
+        <summary class="flex justify-between items-center font-headline-md text-base sm:text-lg text-stone-950 uppercase p-4 cursor-pointer list-none select-none">
+            <span>Bebidas Sin Alcohol</span>
+            <span class="transition-transform group-open:rotate-180 material-symbols-outlined">expand_more</span>
+        </summary>
+        <div class="px-4 pb-4 pt-0">
+            
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">GASEOSA PEQUEÑA / AGUA</h4>
+                
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 6.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">GASEOSA 1 LITRO</h4>
+                
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 12.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">GASEOSAS ARTESANALES</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Maracuyá / Frutos Rojos</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 10.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">JUGOS CLÁSICOS</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Naranja, Fresa, Papaya, Piña (Vaso: 10.00 / Jarra: 20.00)</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 10.00+
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">FRAPPES</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Oreo, Café, Frutos Rojos</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 17.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">REFRESCOS (1/2 L - 1 L)</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Chicha, Limonada, Maracuyá (10.00 - 20.00)</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 10.00+
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">FROZEN</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">1/2 Litro: 12.00 / 1 Litro: 22.00</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 12.00+
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">BEBIDAS CALIENTES</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Té, Mate, Vino Caliente, Ponches (5.00 - 16.00)</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 5.00+
+            </div>
+        </div>
+        </div>
+    </details>
+    
+    <details class="group bg-white rounded-xl shadow-sm open:shadow-md transition-all border-l-4 border-[#F04E23]" >
+        <summary class="flex justify-between items-center font-headline-md text-base sm:text-lg text-stone-950 uppercase p-4 cursor-pointer list-none select-none">
+            <span>Vinos & Cervezas</span>
+            <span class="transition-transform group-open:rotate-180 material-symbols-outlined">expand_more</span>
+        </summary>
+        <div class="px-4 pb-4 pt-0">
+            
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">CERVEZA CUSQUEÑA</h4>
+                
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 10.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">COPA DE VINO</h4>
+                
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 15.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">SANGRÍA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Copa: 15.00 | 1/2 L: 35.00 | 1 L: 50.00</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 15.00+
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">ANIS NAJAR</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Copa</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 8.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">VINOS TABERNERO / TACAMA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">375ml / 750ml</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 35.00 - 60.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">VINOS PREMIUM</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Intipalka, Casillero del Diablo, Navarro Correas</p>
+            </div>
+            <div class="font-bold text-[#F04E23] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 70.00+
+            </div>
+        </div>
+        </div>
+    </details>
 </div>
 <!-- Menu Norte -->
 <div id="menu-norte">
