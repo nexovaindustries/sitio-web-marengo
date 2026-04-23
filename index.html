@@ -207,13 +207,71 @@
         z-index: 10;
     }
 </style>
+
+<style>
+/* Mobile optimizations */
+@media (max-width: 640px) {
+    .section-heading {
+        border-left: 4px solid #F04E23;
+        padding-left: 16px;
+        text-align: left !important;
+    }
+    .section-heading-center {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-link {
+        white-space: nowrap;
+        font-size: 0.85rem !important;
+    }
+}
+
+/* Left accent line for section headings on all screens */
+.section-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.section-title-wrap::before {
+    content: '';
+    display: block;
+    width: 5px;
+    min-width: 5px;
+    height: 2.2em;
+    background: linear-gradient(to bottom, #F04E23, #F5A623);
+    border-radius: 999px;
+}
+
+/* Ensure images never clip */
+img {
+    max-width: 100%;
+    height: auto;
+}
+.object-cover {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Scrollbar hide for nav */
+nav::-webkit-scrollbar { display: none; }
+
+/* Fix menu section overflow on mobile */
+@media (max-width: 640px) {
+    .menu-item-row {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+</style>
+
 </head>
 
 <body class="bg-background text-on-background font-body-md text-body-md overflow-x-hidden">
 <!-- TopAppBar -->
 <header class="bg-stone-950/90 dark:bg-black/90 backdrop-blur-md w-full top-0 sticky z-50 border-b-2 border-stone-800 shadow-[0_4px_20px_rgba(240,78,35,0.15)]">
 <div class="flex justify-center items-center w-full px-4 md:px-8 py-5 max-w-screen-2xl mx-auto">
-<nav class="flex flex-wrap justify-center gap-4 md:gap-8" id="navbar">
+<nav class="flex flex-nowrap overflow-x-auto justify-center gap-4 md:gap-6 scrollbar-hide" id="navbar" style="scrollbar-width:none;-ms-overflow-style:none;">
 <a class="nav-link font-['Epilogue'] font-black uppercase tracking-tighter text-[#F04E23] border-b-2 border-[#F04E23] pb-1 hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#inicio">Inicio</a>
 <a class="nav-link font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 border-b-2 border-transparent pb-1 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#sedes">Sedes</a>
 <a class="nav-link font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 border-b-2 border-transparent pb-1 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#menu">Menú</a>
@@ -239,13 +297,13 @@
 <!-- SEDES SECTION -->
 <section class="py-section-gap px-container-padding max-w-screen-2xl mx-auto" id="sedes">
 <div class="text-center mb-stack-lg">
-<h2 class="font-headline-lg text-headline-lg uppercase text-stone-950 mb-stack-sm">Nuestras Sedes</h2>
+<div class="section-title-wrap justify-center"><h2 class="font-headline-lg text-headline-lg uppercase text-stone-950 mb-stack-sm">Nuestras Sedes</h2></div>
 <div class="w-24 h-2 bg-[#F04E23] mx-auto rounded-full"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
 <!-- Sede Centro -->
 <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_10px_40px_rgba(240,78,35,0.08)] border border-surface-container-high transition-transform hover:scale-[1.02] duration-300 flex flex-col">
-<div class="h-64 sm:h-80 relative w-full bg-surface-variant">
+<div class="h-56 sm:h-72 md:h-80 relative w-full bg-surface-variant overflow-hidden">
 <img alt="Pizza Margarita Marengo" class="absolute inset-0 w-full h-full object-cover" src="assets/img/sede-yanahuara.jpg"/>
 <div class="absolute top-4 right-4 bg-[#F5A623] text-stone-950 font-label-bold text-label-bold px-4 py-2 rounded-full shadow-lg uppercase">
                             Abierto
@@ -264,7 +322,7 @@
 </div>
 <!-- Sede Norte -->
 <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_10px_40px_rgba(240,78,35,0.08)] border border-surface-container-high transition-transform hover:scale-[1.02] duration-300 flex flex-col">
-<div class="h-64 sm:h-80 relative w-full bg-surface-variant">
+<div class="h-56 sm:h-72 md:h-80 relative w-full bg-surface-variant overflow-hidden">
 <img alt="Pizza Marengo JLBYR" class="absolute inset-0 w-full h-full object-cover" src="assets/img/sede-jlbyr.jpg"/>
 <div class="absolute top-4 right-4 bg-[#F5A623] text-stone-950 font-label-bold text-label-bold px-4 py-2 rounded-full shadow-lg uppercase">
                             Abierto
@@ -284,9 +342,9 @@
 </div>
 </section>
 <!-- MENU SECTION -->
-<section class="py-section-gap px-container-padding bg-stone-100 max-w-screen-2xl mx-auto rounded-3xl mb-section-gap bg-pizza-pattern" id="menu">
+<section class="py-section-gap px-container-padding bg-stone-100 w-full max-w-screen-2xl mx-auto rounded-none sm:rounded-3xl mb-section-gap bg-pizza-pattern overflow-hidden" id="menu">
 <div class="text-center mb-stack-lg">
-<h2 class="font-headline-lg text-headline-lg uppercase text-stone-950 mb-stack-sm">Nuestro Menú</h2>
+<div class="section-title-wrap justify-center"><h2 class="font-headline-lg text-headline-lg uppercase text-stone-950 mb-stack-sm">Nuestro Menú</h2></div>
 <div class="w-24 h-2 bg-[#F04E23] mx-auto rounded-full"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -1104,17 +1162,17 @@
 <!-- GALLERY SECTION -->
 <section class="py-section-gap w-full bg-stone-100 bg-pizza-pattern" id="galeria">
     <div class="text-center mb-stack-lg px-container-padding">
-        <h2 class="font-headline-lg text-headline-lg uppercase text-stone-950 mb-stack-sm">La Experiencia Marengo</h2>
+        <div class="section-title-wrap justify-center"><h2 class="font-headline-lg text-headline-lg uppercase text-stone-950 mb-stack-sm">La Experiencia Marengo</h2></div>
         <div class="w-24 h-2 bg-[#F04E23] mx-auto rounded-full"></div>
         <p class="text-stone-500 mt-4 max-w-2xl mx-auto text-lg font-medium">Nuestras creaciones directas del horno a tu feed.</p>
     </div>
     
     <div class="max-w-screen-2xl mx-auto px-container-padding">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             
             <!-- Photo 1: Vino Caliente -->
             <div class="bg-white rounded-2xl p-3 shadow-md hover:shadow-2xl transition-all duration-500 group border-b-4 border-[#F04E23] hover:-translate-y-2 cursor-pointer">
-                <div class="overflow-hidden rounded-xl aspect-[4/5] relative bg-stone-200">
+                <div class="overflow-hidden rounded-xl aspect-square sm:aspect-[4/5] relative bg-stone-200">
                     <img src="assets/img/galeria-1.jpg" alt="Vino Caliente" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
@@ -1129,7 +1187,7 @@
 
             <!-- Photo 2: Calzone -->
             <div class="bg-white rounded-2xl p-3 shadow-md hover:shadow-2xl transition-all duration-500 group border-b-4 border-[#F5A623] hover:-translate-y-2 cursor-pointer">
-                <div class="overflow-hidden rounded-xl aspect-[4/5] relative bg-stone-200">
+                <div class="overflow-hidden rounded-xl aspect-square sm:aspect-[4/5] relative bg-stone-200">
                     <img src="assets/img/galeria-2.jpg" alt="Calzone Marengo" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
@@ -1144,7 +1202,7 @@
 
             <!-- Photo 3: Pizza Oregano -->
             <div class="bg-white rounded-2xl p-3 shadow-md hover:shadow-2xl transition-all duration-500 group border-b-4 border-[#F04E23] hover:-translate-y-2 cursor-pointer">
-                <div class="overflow-hidden rounded-xl aspect-[4/5] relative bg-stone-200">
+                <div class="overflow-hidden rounded-xl aspect-square sm:aspect-[4/5] relative bg-stone-200">
                     <img src="assets/img/galeria-3.jpg" alt="Pizza al Horno" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
@@ -1159,7 +1217,7 @@
 
             <!-- Photo 4: Lasagna -->
             <div class="bg-white rounded-2xl p-3 shadow-md hover:shadow-2xl transition-all duration-500 group border-b-4 border-[#F5A623] hover:-translate-y-2 cursor-pointer">
-                <div class="overflow-hidden rounded-xl aspect-[4/5] relative bg-stone-200">
+                <div class="overflow-hidden rounded-xl aspect-square sm:aspect-[4/5] relative bg-stone-200">
                     <img src="assets/img/galeria-4.jpg" alt="Lasagña Bolognesa" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
@@ -1180,10 +1238,10 @@
                 <span class="transition-transform group-open:rotate-180 material-symbols-outlined">expand_more</span>
             </summary>
             <div class="p-4 pt-0">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
 <!-- Photo 5: Extra -->
             <div class="bg-white rounded-2xl p-3 shadow-md hover:shadow-2xl transition-all duration-500 group border-b-4 border-[#F04E23] hover:-translate-y-2 cursor-pointer">
-                <div class="overflow-hidden rounded-xl aspect-[4/5] relative bg-stone-200">
+                <div class="overflow-hidden rounded-xl aspect-square sm:aspect-[4/5] relative bg-stone-200">
                     <img src="assets/img/galeria-5.jpg" alt="Marengo" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
@@ -1198,7 +1256,7 @@
             
             <!-- Photo 6: Extra -->
             <div class="bg-white rounded-2xl p-3 shadow-md hover:shadow-2xl transition-all duration-500 group border-b-4 border-[#F5A623] hover:-translate-y-2 cursor-pointer">
-                <div class="overflow-hidden rounded-xl aspect-[4/5] relative bg-stone-200">
+                <div class="overflow-hidden rounded-xl aspect-square sm:aspect-[4/5] relative bg-stone-200">
                     <img src="assets/img/galeria-6.jpg" alt="Marengo" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
@@ -1213,7 +1271,7 @@
             
             <!-- Photo 7: Extra -->
             <div class="bg-white rounded-2xl p-3 shadow-md hover:shadow-2xl transition-all duration-500 group border-b-4 border-[#F04E23] hover:-translate-y-2 cursor-pointer">
-                <div class="overflow-hidden rounded-xl aspect-[4/5] relative bg-stone-200">
+                <div class="overflow-hidden rounded-xl aspect-square sm:aspect-[4/5] relative bg-stone-200">
                     <img src="assets/img/galeria-7.jpg" alt="Marengo" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
@@ -1228,7 +1286,7 @@
             
             <!-- Photo 8: Extra -->
             <div class="bg-white rounded-2xl p-3 shadow-md hover:shadow-2xl transition-all duration-500 group border-b-4 border-[#F5A623] hover:-translate-y-2 cursor-pointer">
-                <div class="overflow-hidden rounded-xl aspect-[4/5] relative bg-stone-200">
+                <div class="overflow-hidden rounded-xl aspect-square sm:aspect-[4/5] relative bg-stone-200">
                     <img src="assets/img/galeria-8.jpg" alt="Marengo" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
