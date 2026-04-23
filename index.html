@@ -170,24 +170,14 @@
 <body class="bg-background text-on-background font-body-md text-body-md overflow-x-hidden">
 <!-- TopAppBar -->
 <header class="bg-stone-950 dark:bg-black w-full top-0 sticky z-50 border-b-2 border-stone-800 shadow-[0_4px_20px_rgba(240,78,35,0.15)]">
-<div class="flex justify-between items-center w-full px-8 py-5 max-w-screen-2xl mx-auto">
-<div class="text-2xl font-black text-[#F04E23] tracking-widest font-['Epilogue'] uppercase">
-                MARENGO PIZZERÍA
-            </div>
-<nav class="hidden md:flex gap-8">
+<div class="flex justify-center items-center w-full px-4 md:px-8 py-5 max-w-screen-2xl mx-auto">
+<nav class="flex flex-wrap justify-center gap-4 md:gap-8">
 <a class="font-['Epilogue'] font-black uppercase tracking-tighter text-[#F04E23] border-b-2 border-[#F04E23] pb-1 hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#menu">Menú</a>
 <a class="font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#sedes">Sedes</a>
 <a class="font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#galeria">Galería</a>
 <a class="font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#promociones">Promociones</a>
+<a class="font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#sedes">Ubicación</a>
 </nav>
-<div class="flex items-center gap-4">
-<button class="bg-[#F04E23] text-white font-['Epilogue'] font-black uppercase tracking-tighter px-6 py-3 rounded hover:scale-105 transition-all duration-200 active:scale-95 hidden md:block">
-                    Ordenar Ahora
-                </button>
-<button class="text-[#F04E23] hover:scale-105 transition-all duration-200 active:scale-95">
-<span class="material-symbols-outlined">shopping_cart</span>
-</button>
-</div>
 </div>
 </header>
 <main>
@@ -1068,52 +1058,7 @@
 </div>
 </div>
 </section>
-<!-- PROMOTIONS SECTION -->
-<section class="py-section-gap px-container-padding max-w-screen-2xl mx-auto" id="promociones">
-<div class="text-center mb-stack-lg">
-<h2 class="font-headline-lg text-headline-lg uppercase text-stone-950 mb-stack-sm">Promociones Activas</h2>
-<div class="w-24 h-2 bg-[#F5A623] mx-auto rounded-full"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Promo 1 -->
-<div class="bg-stone-950 text-white rounded-2xl p-8 relative overflow-hidden group hover:scale-105 transition-transform duration-300">
-<div class="absolute -right-10 -top-10 text-[#F04E23] opacity-20 transform group-hover:rotate-12 transition-transform duration-500">
-<span class="material-symbols-outlined" style="font-size: 150px;">celebration</span>
-</div>
-<div class="relative z-10">
-<span class="bg-[#F04E23] text-white text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full mb-4 inline-block">Solo Martes</span>
-<h3 class="font-headline-md text-2xl uppercase mb-2">2x1 en Clásicas</h3>
-<p class="text-stone-400 mb-6">Pide una pizza clásica grande y llévate la segunda totalmente gratis. Ideal para compartir.</p>
-<button class="text-[#F5A623] font-button uppercase border-b-2 border-[#F5A623] pb-1 hover:text-white hover:border-white transition-colors">Reclamar Ahora</button>
-</div>
-</div>
-<!-- Promo 2 -->
-<div class="bg-[#F04E23] text-white rounded-2xl p-8 relative overflow-hidden group hover:scale-105 transition-transform duration-300 shadow-xl shadow-red-900/20">
-<div class="absolute -right-10 -top-10 text-white opacity-20 transform group-hover:rotate-12 transition-transform duration-500">
-<span class="material-symbols-outlined" style="font-size: 150px;">favorite</span>
-</div>
-<div class="relative z-10">
-<span class="bg-stone-950 text-white text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full mb-4 inline-block">Todos los días</span>
-<h3 class="font-headline-md text-2xl uppercase mb-2">Combo Pareja</h3>
-<p class="text-white/80 mb-6">1 Pizza mediana + 2 bebidas + 1 porción de pan al ajo por un precio especial.</p>
-<div class="font-headline-md text-3xl font-black mb-4">S/ 55</div>
-<button class="bg-stone-950 text-white font-button uppercase px-6 py-2 rounded-lg hover:bg-white hover:text-stone-950 transition-colors">Pedir Combo</button>
-</div>
-</div>
-<!-- Promo 3 -->
-<div class="bg-stone-950 text-white rounded-2xl p-8 relative overflow-hidden group hover:scale-105 transition-transform duration-300">
-<div class="absolute -right-10 -top-10 text-[#F5A623] opacity-20 transform group-hover:rotate-12 transition-transform duration-500">
-<span class="material-symbols-outlined" style="font-size: 150px;">two_wheeler</span>
-</div>
-<div class="relative z-10">
-<span class="bg-[#F5A623] text-stone-950 text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full mb-4 inline-block">Online</span>
-<h3 class="font-headline-md text-2xl uppercase mb-2">Delivery Gratis</h3>
-<p class="text-stone-400 mb-6">En pedidos mayores a S/ 60. Aplicable para zonas de cobertura en ambas sedes.</p>
-<button class="text-[#F04E23] font-button uppercase border-b-2 border-[#F04E23] pb-1 hover:text-white hover:border-white transition-colors">Pedir por Web</button>
-</div>
-</div>
-</div>
-</section>
+
 <!-- GALLERY SECTION -->
 <section class="py-section-gap w-full bg-stone-950" id="galeria">
 <div class="text-center mb-stack-lg px-container-padding">
