@@ -171,17 +171,18 @@
 <!-- TopAppBar -->
 <header class="bg-stone-950 dark:bg-black w-full top-0 sticky z-50 border-b-2 border-stone-800 shadow-[0_4px_20px_rgba(240,78,35,0.15)]">
 <div class="flex justify-center items-center w-full px-4 md:px-8 py-5 max-w-screen-2xl mx-auto">
-<nav class="flex flex-wrap justify-center gap-4 md:gap-8">
-<a class="font-['Epilogue'] font-black uppercase tracking-tighter text-[#F04E23] border-b-2 border-[#F04E23] pb-1 hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#menu">Menú</a>
-<a class="font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#sedes">Sedes</a>
-<a class="font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#galeria">Galería</a>
-<a class="font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#contacto">Ubicación</a>
+<nav class="flex flex-wrap justify-center gap-4 md:gap-8" id="navbar">
+<a class="nav-link font-['Epilogue'] font-black uppercase tracking-tighter text-[#F04E23] border-b-2 border-[#F04E23] pb-1 hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#inicio">Inicio</a>
+<a class="nav-link font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 border-b-2 border-transparent pb-1 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#menu">Menú</a>
+<a class="nav-link font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 border-b-2 border-transparent pb-1 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#sedes">Sedes</a>
+<a class="nav-link font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 border-b-2 border-transparent pb-1 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#galeria">Galería</a>
+<a class="nav-link font-['Epilogue'] font-black uppercase tracking-tighter text-stone-400 border-b-2 border-transparent pb-1 hover:text-white transition-colors hover:scale-105 hover:text-[#F5A623] transition-all duration-200 active:scale-95" href="#contacto">Ubicación</a>
 </nav>
 </div>
 </header>
 <main>
 <!-- HERO -->
-<section class="min-h-screen bg-[#F04E23] flex flex-col items-center justify-center text-center p-container-padding relative overflow-hidden">
+<section class="min-h-screen bg-[#F04E23] flex flex-col items-center justify-center text-center p-container-padding relative overflow-hidden" id="inicio">
 <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-black via-transparent to-transparent"></div>
 <div class="z-10 flex flex-col items-center gap-stack-lg max-w-4xl">
 <img alt="Marengo Pizzeria Logo" class="w-64 h-auto md:w-96 drop-shadow-2xl rounded-full" data-alt="High-resolution bold logo for Marengo Pizzeria with a modern artisanal aesthetic" src="https://lh3.googleusercontent.com/aida/ADBb0ujDKRO1O4YehkhOooaEOvWfqynQsyQuAhhsQH85Be4uCDxp7_7rfiVKGMjtWzQz6JaFZta6Z7edFBTn-SrokRbPGI7rLpvziAe8Xo-mOFijwAInVORIFpzYMNRaPUofdIvPjHeJ8ws4a1ZqfFXGBjDviFVm_2mOgq8ySwcNVEkrXYKWNqc2ixVWaCyk7OBcx37beY-bLBtrRpaPR_v7ub6UCZt35o4dzcKPQNbGOn5PLp0wnN-qWzzmm-0dpMT5sGJhu7kWBu7HFNk"/>
@@ -1129,7 +1130,16 @@
                 </div>
             </div>
             
-            <!-- Photo 5: Extra -->
+                    </div>
+        
+        <details class="group bg-white rounded-xl shadow-sm open:shadow-md transition-all border-l-4 border-[#F5A623] w-full mx-auto mt-8">
+            <summary class="flex justify-between items-center font-headline-md text-base sm:text-lg text-stone-950 uppercase p-4 cursor-pointer list-none select-none">
+                <span class="flex items-center gap-2"><span class="material-symbols-outlined">photo_library</span> Ver Más Fotos</span>
+                <span class="transition-transform group-open:rotate-180 material-symbols-outlined">expand_more</span>
+            </summary>
+            <div class="p-4 pt-0">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Photo 5: Extra -->
             <div class="bg-white rounded-2xl p-3 shadow-md hover:shadow-2xl transition-all duration-500 group border-b-4 border-[#F04E23] hover:-translate-y-2 cursor-pointer">
                 <div class="overflow-hidden rounded-xl aspect-[4/5] relative bg-stone-200">
                     <img src="assets/img/galeria-5.jpg" alt="Marengo" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
@@ -1189,7 +1199,9 @@
                 </div>
             </div>
 
-        </div>
+                </div>
+            </div>
+        </details>
     </div>
 </section>
 <!-- CONTACT SECTION -->
@@ -1262,4 +1274,33 @@
 </footer>
 
 </main>
+
+<!-- ScrollSpy Script -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.pageYOffset >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('text-[#F04E23]', 'border-[#F04E23]');
+            link.classList.add('text-stone-400', 'border-transparent');
+            if (current && link.getAttribute('href').includes(current)) {
+                link.classList.remove('text-stone-400', 'border-transparent');
+                link.classList.add('text-[#F04E23]', 'border-[#F04E23]');
+            }
+        });
+    });
+});
+</script>
 </body></html>
+
