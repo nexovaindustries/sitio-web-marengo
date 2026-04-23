@@ -777,33 +777,294 @@
     </details>
 </div>
 <!-- Menu Norte -->
-<div id="menu-norte">
-<h3 class="font-headline-md text-headline-md uppercase text-[#F04E23] mb-6 flex items-center gap-2">
-<span class="material-symbols-outlined">local_fire_department</span> Sede Boulevard-JLBYR
-                </h3>
-<div class="flex flex-col gap-6">
-<div class="bg-white p-6 rounded-xl shadow-md flex justify-between items-center hover:shadow-lg transition-shadow border-l-4 border-[#F5A623]">
-<div>
-<h4 class="font-headline-md text-lg text-stone-950 uppercase">Especial</h4>
-<p class="text-stone-500 font-body-md mt-1">Prosciutto, rúcula fresca, escamas de parmesano, reducción balsámica.</p>
-</div>
-<span class="font-headline-md text-[#F04E23] font-black text-xl">S/ 55</span>
-</div>
-<div class="bg-white p-6 rounded-xl shadow-md flex justify-between items-center hover:shadow-lg transition-shadow border-l-4 border-[#F5A623]">
-<div>
-<h4 class="font-headline-md text-lg text-stone-950 uppercase">4 Quesos</h4>
-<p class="text-stone-500 font-body-md mt-1">Mozzarella, gorgonzola, provolone, parmesano crujiente.</p>
-</div>
-<span class="font-headline-md text-[#F04E23] font-black text-xl">S/ 48</span>
-</div>
-<div class="bg-white p-6 rounded-xl shadow-md flex justify-between items-center hover:shadow-lg transition-shadow border-l-4 border-[#F5A623]">
-<div>
-<h4 class="font-headline-md text-lg text-stone-950 uppercase">BBQ</h4>
-<p class="text-stone-500 font-body-md mt-1">Pollo desmechado, cebolla caramelizada, tocino, salsa BBQ casera.</p>
-</div>
-<span class="font-headline-md text-[#F04E23] font-black text-xl">S/ 45</span>
-</div>
-</div>
+<div id="menu-norte" class="flex flex-col gap-4">
+    <h3 class="font-headline-md text-headline-md uppercase text-[#F04E23] mb-2 flex items-center gap-2">
+        <span class="material-symbols-outlined">local_fire_department</span> Sede Boulevard-JLBYR
+    </h3>
+    
+    <details class="group bg-white rounded-xl shadow-sm open:shadow-md transition-all border-l-4 border-[#F5A623]" open>
+        <summary class="flex justify-between items-center font-headline-md text-base sm:text-lg text-stone-950 uppercase p-4 cursor-pointer list-none select-none">
+            <span>Pizzas</span>
+            <span class="transition-transform group-open:rotate-180 material-symbols-outlined">expand_more</span>
+        </summary>
+        <div class="px-4 pb-4 pt-0">
+            
+            <div class="text-[10px] sm:text-xs font-bold text-stone-400 mb-1 flex justify-end gap-1 sm:gap-4 border-b border-stone-100 pb-2">
+                <span class="w-10 sm:w-12 text-center">PEQ.</span>
+                <span class="w-10 sm:w-12 text-center">FAM.</span>
+            </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">MARENGO</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">La leña se enciende con nuestra receta icónica, rellena de tocino, jamón, salame y salchicha. ¡Una combinación de la casa!</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">HAWAIANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Una pizza que no necesita presentación, pero te aseguramos que a la leña sabe mucho mejor.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">AMERICANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">El jamón y queso, nunca fallan y si le pones leña, imagínate.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">ITALIANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Con jamón y champiñones. Suena sencillo, pero no necesita más ¡Una combinación que no defrauda!</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">DOMINICANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Si no quieres durazno, te lo cambiamos por piña. Pollo y piña para degustar.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">PORTUGUESA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Para los conocedores, no necesita más. Salame, piña y champiñones.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">CHACARERA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">La salsa bolognesa envuelta en los sabores de nuestra leña y calentada en nuestro horno.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">MARGARITA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Se ve tan bien como sabe, tomate con albahaca, y mucho queso, por supuesto.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">TROPICAL</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Si te gusta el dulce, esta es tu pizza, frutos de la estación con leche condensada.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">MEDITERRÁNEA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Una pizza para los indecisos, el dulce del durazno con lo salado del pollo fusionándose en nuestro horno.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">VEGETARIANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">No necesitas mayor explicación, espinacas, aceitunas, champiñones.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">GIORGIO</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">¡Bon Apentit! Si te gustan los sabores intensos, esta es tu pizza, jamón, cebolla y aceituna.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">CAMPESINA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Para los que les encanta el tocino, no hay mejor forma de combinar que con cebolla y aceituna.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">NEGRITA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Nada de carne, solo champiñones y aceituna. Estamos seguros de que ¡La amarás!</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">NAPOLITANA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Para los amantes de la aceituna, con queso y un poco de leña, ¡queda perfecta!</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">30.00</span>
+                <span class="w-10 sm:w-12 text-center">50.00</span>
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-2">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">CUATRO ESTACIONES</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Tus favoritas, en una sola pizza, vegetariana, tropical, napolitana y marengo, ideal para compartir.</p>
+            </div>
+            <div class="flex gap-1 sm:gap-4 font-bold text-[#F5A623] text-[13px] sm:text-sm">
+                <span class="w-10 sm:w-12 text-center">-</span>
+                <span class="w-10 sm:w-12 text-center">55.00</span>
+            </div>
+        </div>
+        </div>
+    </details>
+    
+    <details class="group bg-white rounded-xl shadow-sm open:shadow-md transition-all border-l-4 border-[#F5A623]" >
+        <summary class="flex justify-between items-center font-headline-md text-base sm:text-lg text-stone-950 uppercase p-4 cursor-pointer list-none select-none">
+            <span>Pastas & Extras</span>
+            <span class="transition-transform group-open:rotate-180 material-symbols-outlined">expand_more</span>
+        </summary>
+        <div class="px-4 pb-4 pt-0">
+            
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">LASAGÑA BOLOGNESA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">La salsa bolognesa envuelta en los sabores de nuestra leña y calentada en nuestro horno.</p>
+            </div>
+            <div class="font-bold text-[#F5A623] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 30.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">CALZONE MARENGO</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Se ve tan bien como sabe, tomate con albahaca, y mucho queso, por supuesto.</p>
+            </div>
+            <div class="font-bold text-[#F5A623] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 30.00
+            </div>
+        </div>
+        </div>
+    </details>
+    
+    <details class="group bg-white rounded-xl shadow-sm open:shadow-md transition-all border-l-4 border-[#F5A623]" >
+        <summary class="flex justify-between items-center font-headline-md text-base sm:text-lg text-stone-950 uppercase p-4 cursor-pointer list-none select-none">
+            <span>Bebidas</span>
+            <span class="transition-transform group-open:rotate-180 material-symbols-outlined">expand_more</span>
+        </summary>
+        <div class="px-4 pb-4 pt-0">
+            
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">CHICHA MORADA / MARACUYÁ / LIMONADA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Jarra 1Lt</p>
+            </div>
+            <div class="font-bold text-[#F5A623] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 15.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">LIMONADA C/ HIERBA BUENA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Jarra 1Lt</p>
+            </div>
+            <div class="font-bold text-[#F5A623] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 15.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">LIMONADA C/ FRUTOS ROJOS</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Jarra 1Lt</p>
+            </div>
+            <div class="font-bold text-[#F5A623] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 20.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">FROZEN</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Jarra 1Lt</p>
+            </div>
+            <div class="font-bold text-[#F5A623] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 20.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">GASEOSAS ARTESANALES</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">Maracuyá, Frutos rojos, Arándanos</p>
+            </div>
+            <div class="font-bold text-[#F5A623] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 10.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">AGUA</h4>
+                
+            </div>
+            <div class="font-bold text-[#F5A623] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 5.00
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">COCA COLA E INCA COLA</h4>
+                <p class="text-stone-500 text-[11px] sm:text-xs mt-0.5 leading-tight">600ml: 6.00 / 1 Litro: 10.00</p>
+            </div>
+            <div class="font-bold text-[#F5A623] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 6.00+
+            </div>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-stone-100 last:border-0">
+            <div class="flex-1 pr-4">
+                <h4 class="font-bold text-stone-900 uppercase text-[13px] sm:text-sm">VINO CALIENTE</h4>
+                
+            </div>
+            <div class="font-bold text-[#F5A623] text-[13px] sm:text-sm whitespace-nowrap">
+                S/ 16.00
+            </div>
+        </div>
+        </div>
+    </details>
 </div>
 </div>
 </section>
