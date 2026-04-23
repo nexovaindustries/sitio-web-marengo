@@ -166,7 +166,30 @@
             font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
       </style>
+
+<style>
+    .bg-pizza-pattern {
+        position: relative;
+    }
+    .bg-pizza-pattern::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url('assets/img/pizza-pattern.jpg');
+        background-size: 250px;
+        background-repeat: repeat;
+        opacity: 0.05;
+        filter: invert(1);
+        z-index: 0;
+        pointer-events: none;
+    }
+    .bg-pizza-pattern > * {
+        position: relative;
+        z-index: 10;
+    }
+</style>
 </head>
+
 <body class="bg-background text-on-background font-body-md text-body-md overflow-x-hidden">
 <!-- TopAppBar -->
 <header class="bg-stone-950 dark:bg-black w-full top-0 sticky z-50 border-b-2 border-stone-800 shadow-[0_4px_20px_rgba(240,78,35,0.15)]">
@@ -242,7 +265,7 @@
 </div>
 </section>
 <!-- MENU SECTION -->
-<section class="py-section-gap px-container-padding bg-stone-100 max-w-screen-2xl mx-auto rounded-3xl mb-section-gap" id="menu">
+<section class="py-section-gap px-container-padding bg-stone-100 max-w-screen-2xl mx-auto rounded-3xl mb-section-gap bg-pizza-pattern" id="menu">
 <div class="text-center mb-stack-lg">
 <h2 class="font-headline-lg text-headline-lg uppercase text-stone-950 mb-stack-sm">Nuestro Menú</h2>
 <div class="w-24 h-2 bg-[#F04E23] mx-auto rounded-full"></div>
@@ -1060,7 +1083,7 @@
 </section>
 
 <!-- GALLERY SECTION -->
-<section class="py-section-gap w-full bg-stone-100" id="galeria">
+<section class="py-section-gap w-full bg-stone-100 bg-pizza-pattern" id="galeria">
     <div class="text-center mb-stack-lg px-container-padding">
         <h2 class="font-headline-lg text-headline-lg uppercase text-stone-950 mb-stack-sm">La Experiencia Marengo</h2>
         <div class="w-24 h-2 bg-[#F04E23] mx-auto rounded-full"></div>
@@ -1205,7 +1228,7 @@
     </div>
 </section>
 <!-- CONTACT SECTION -->
-<section class="py-section-gap px-container-padding border-t border-stone-200" id="contacto">
+<section class="py-section-gap px-container-padding border-t border-stone-200 bg-white bg-pizza-pattern" id="contacto">
 <div class="max-w-screen-xl mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 <div>
